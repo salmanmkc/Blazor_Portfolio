@@ -8,7 +8,7 @@
 @foreach(var book in books)
 {
     <tr>
-        <td>@book</td>
+        <td>@project1.Title</td>
     </tr>
 }
 
@@ -18,6 +18,7 @@ List<string> listTitle = new List<string>() { "Rocket Gravity Assist Simulation"
 
 ProjectsObj project1 = new ProjectsObj("Rocket Gravity Assist Simulation", "Made for physics teacher", "This program demonstrates the use of the gravity slingshot effect which can be used by physics students doing A level or GCSE physics to help prepare for their exam and use for homework as well as in the lesson as an interactive activity");
 
+List<ProjectsObj> listOfProjects = new List<ProjectsObj>();
 void IncrementCount2()
 {
 
