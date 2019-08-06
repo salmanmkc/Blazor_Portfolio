@@ -8,6 +8,14 @@ a {
     color: #0366d6;
 }
 
+.rotateimg180 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
 .btn-primary {
   color: #fff;
   background-color: #1b6ec2;
