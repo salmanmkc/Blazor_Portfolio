@@ -2,15 +2,23 @@
 
 <h1>Counter</h1>
 
-<p>Current count: @currentCount</p>
+<p>Current coadsfasdfdsunt: @currentCount</p>
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+@foreach(var book in books)
+{
+    <tr>
+        <td>@book</td>
+    </tr>
+}
 
 @code {
-    int currentCount = 0;
+int currentCount = 0;
+List<string> books = new List<string>() { "Harry Potter", "The 64 lanes", "Lion King", "Lord of the Rings" };
 
-    void IncrementCount()
-    {
-        currentCount++;
-    }
+void IncrementCount()
+{
+
+    currentCount++;
+}
 }
