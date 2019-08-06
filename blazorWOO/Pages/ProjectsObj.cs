@@ -14,12 +14,24 @@ namespace blazorWOO.Pages
             Description = userdescription;
         }
 
+
+
         private string title;
 
         public string Title
         {
             get { return title; }
-            set { title = value; }
+            set {
+                if(value!= "")
+                {
+                    title = value;
+                }
+                else
+                {
+                    throw new Exception("Can't have an title");
+                }
+                
+            }
         }
 
         private string subtitle;
