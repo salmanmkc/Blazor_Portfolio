@@ -7,6 +7,13 @@ namespace blazorWOO.Pages
 {
     public class ProjectsObj
     {
+        public ProjectsObj(string usertitle, string usersubtitle, string userdescription)
+        {
+            Title = usertitle;
+            Subtitle = usersubtitle;
+            Description = userdescription;
+        }
+
         private string title;
 
         public string Title
