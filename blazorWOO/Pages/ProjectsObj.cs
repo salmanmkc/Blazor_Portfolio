@@ -14,7 +14,11 @@ namespace blazorWOO.Pages
             Description = userdescription;
         }
 
-
+        public ProjectsObj(string usertitle)
+        {
+            Title = usertitle;
+            
+        }
 
         private string title;
 
