@@ -12,7 +12,7 @@
 <tr>
     <h1>@project.Title</h1>
     <p><i>@project.Subtitle</i></p>
-    @if (project.ImagePath != "")
+    @if (project.ImagePath != null)
     {
         <img src="@project.ImagePath" alt="me at the River Thames" height="500" width="500">
     }
