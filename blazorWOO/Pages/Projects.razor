@@ -14,13 +14,11 @@
     <p style="margin: 0; padding: 0;"><i>@project.Subtitle</i></p>
     @if (project.ImagePath != null)
     {
-        <a href="#" id="bottle" onclick="@loadVideo">
-            <img src="@project.ImagePath" alt="me at the River Thames" height="60%" width="60%">
-        </a>
+        <iframe id="demo" width="560" height="315" src="project.ImagePath" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-        <button onclick="getElementById('demo').innerHTML=Date()">What is the time?</button>
+        
 
-        <iframe id="demo" width="560" height="315" src="https://www.youtube.com/embed/OBJu8J10NmM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
     }
 
 
@@ -36,7 +34,7 @@
             () { "Rocket Gravity Assist Simulation", "Film Adder", "UWP To Do List", "Type Racing Application", "Noise Threshold Alerts" };*@
     //adding to list fails
 
-    ProjectsObj project1 = new ProjectsObj("Rocket Gravity Assist Simulation", "Made for physics teacher", "This program demonstrates the use of the gravity slingshot effect which can be used by physics students doing A level or GCSE physics to help prepare for their exam and use for homework as well as in the lesson as an interactive activity", "css/Assets/ProjectImages/RocketGravityAssist/RocketGravityAssist1.png");
+    ProjectsObj project1 = new ProjectsObj("Rocket Gravity Assist Simulation", "Made for physics teacher", "This program demonstrates the use of the gravity slingshot effect which can be used by physics students doing A level or GCSE physics to help prepare for their exam and use for homework as well as in the lesson as an interactive activity", "https://www.youtube.com/embed/OBJu8J10NmM");
     ProjectsObj project2 = new ProjectsObj("Film Adder", "Made for adding films", "This program can be used to share films with your friends, and family, also track which films you want to watch, as well as leave a rating", "/css/Assets/ProjectImages/FilmAdder/FilmAdder.png");
 
 
