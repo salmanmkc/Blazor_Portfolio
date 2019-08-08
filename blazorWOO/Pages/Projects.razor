@@ -14,7 +14,9 @@
     <p><i>@project.Subtitle</i></p>
     @if (project.ImagePath != null)
     {
-        <img src="@project.ImagePath" alt="me at the River Thames" height="60%" width="60%">
+        <a href="#" id="bottle" onclick="@loadVideo">
+            <img src="@project.ImagePath" alt="me at the River Thames" height="60%" width="60%">        </a>
+        
     }
 
 </tr>
@@ -34,18 +36,23 @@
     ProjectsObj project2 = new ProjectsObj("Film Adder", "Made for adding films", "This program can be used to share films with your friends, and family, also track which films you want to watch, as well as leave a rating", "/css/Assets/ProjectImages/FilmAdder/FilmAdder.png");
 
 
-        List<ProjectsObj> projects = new List<ProjectsObj>();
- void addToList()
-{
-    projects.Add(project1);
+    List<ProjectsObj> projects = new List<ProjectsObj>();
+    void addToList()
+    {
+        projects.Add(project1);
         projects.Add(project2);
 
-}
+    }
 
-                void IncrementCount2()
-{
+    void loadVideo()
+    {
+        throw new Exception("implement video loading here");
+    }
 
-    currentCount2++;
-}
+    void IncrementCount2()
+    {
+
+        currentCount2++;
+    }
                 }
 
