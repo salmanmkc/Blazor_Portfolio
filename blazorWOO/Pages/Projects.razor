@@ -9,22 +9,21 @@
 
 @foreach (var project in projects)
 {
-<tr>
+
     <h1 style="margin-top: 20px">@project.Title</h1>
     <p style="margin: 0; padding: 0;"><i>@project.Subtitle</i></p>
     @if (project.ImagePath != null)
     {
-
         <a href="#" id="bottle" onclick="@loadVideo">
             <img src="@project.ImagePath" alt="me at the River Thames" height="60%" width="60%">
         </a>
 
         <button onclick="getElementById('demo').innerHTML=Date()">What is the time?</button>
 
-        <iframe id="demo"width="560" height="315" src="https://www.youtube.com/embed/OBJu8J10NmM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id="demo" width="560" height="315" src="https://www.youtube.com/embed/OBJu8J10NmM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     }
 
-    </tr>
+
 }
 
 
