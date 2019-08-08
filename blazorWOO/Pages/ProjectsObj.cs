@@ -60,6 +60,14 @@ namespace blazorWOO.Pages
             set { description = value; }
         }
 
+        private string imagePath;
+
+        public string ImagePath
+        {
+            get { return imagePath; }
+            set { imagePath = value; }
+        }
+
 
     }
 }
