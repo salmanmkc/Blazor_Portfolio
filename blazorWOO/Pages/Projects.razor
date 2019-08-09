@@ -13,8 +13,12 @@
     <div>
         @if (project.ImagePath != null)
         {
-            <iframe style="float: left" id="demo" width="560" height="315" src="@project.ImagePath" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p style="float: left">@project.Description</p>
+            <div style="float: left">
+                <iframe  id="demo" width="560" height="315" src="@project.ImagePath" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div style="float: left">
+                <p style="float: left">@project.Description</p>
+            </div>
         }
     </div>
 
