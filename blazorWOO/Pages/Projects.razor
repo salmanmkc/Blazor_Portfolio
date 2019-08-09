@@ -13,12 +13,14 @@
     <div style="min-width: 250px;">
         @if (project.ImagePath != null)
         {
-            <div style="display: inline-block;">
-                <iframe id="demo" width="560" height="315" src="@project.ImagePath" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div style="display: inline-block;word-wrap: break-word;">
-                <p>@project.Description</p>
-            </div>
+        <p>
+            
+                    <iframe id="demo" width="560" height="315" src="@project.ImagePath" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+                    @project.Description
+         </p>
+           
         }
     </div>
 
