@@ -55,7 +55,7 @@ namespace blazorWOO.Pages
 
         }
 
-        public post(string title, string para1, string img1, string para2, string img2, string para3, string im3)
+        public post(string title, string para1, string img1, string para2, string img2, string para3, string img3)
         {
             Para1 = para1;
             Img1 = img1;
