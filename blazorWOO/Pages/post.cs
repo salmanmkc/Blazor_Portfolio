@@ -126,6 +126,10 @@ namespace blazorWOO.Pages
                 {
                     para3 = value;
                 }
+                else
+                {
+                    throw new Exception("Paragraph 3 cannot be empty");
+                }
             }
         }
 
