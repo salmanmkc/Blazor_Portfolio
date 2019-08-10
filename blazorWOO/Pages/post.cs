@@ -120,7 +120,13 @@ namespace blazorWOO.Pages
         public string Para3
         {
             get { return para3; }
-            set { para3 = value; }
+            set
+            {
+                if (value != "")
+                {
+                    para3 = value;
+                }
+            }
         }
 
         private string img1;
