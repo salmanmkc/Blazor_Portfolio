@@ -181,7 +181,17 @@ namespace blazorWOO.Pages
         public string Img3
         {
             get { return img3; }
-            set { img3 = value; }
+            set
+            {
+                if (value != "")
+                {
+                    img1 = value;
+                }
+                else
+                {
+                    throw new Exception("img1 path cannot be empty");
+                }
+            }
         }
 
         private string para4;
