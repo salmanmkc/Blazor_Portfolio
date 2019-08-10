@@ -24,6 +24,7 @@ namespace blazorWOO.Pages
             Subtitle = usersubtitle;
             Description = userdescription;
             ImagePath = userImagePath;
+            imageCount = 1;
         }
 
         public project(string usertitle, string usersubtitle, string userdescription)
