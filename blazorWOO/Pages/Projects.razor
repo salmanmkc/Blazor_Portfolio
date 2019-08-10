@@ -14,10 +14,7 @@
             @if (project.ImagePath != null)
             {
                 <p>
-
                     <iframe style="float: left; margin-right: 50px;" id="demo" width="560" height="315" src="@project.ImagePath" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
                     @project.Description
                 </p>
 
@@ -34,7 +31,6 @@
         <br />
     }
 </div>
-
 
 @code {
 ProjectsObj projects = new ProjectsObj();
