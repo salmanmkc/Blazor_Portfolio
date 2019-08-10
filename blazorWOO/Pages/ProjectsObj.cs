@@ -17,6 +17,7 @@ namespace blazorWOO.Pages
 
             projects.Add(RocketGravityAssist);
             projects.Add(FilmAdder);
+            projects.Add(soundWarning);
         }
 
         public string introductionText { get; set; }
