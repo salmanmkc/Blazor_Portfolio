@@ -13,23 +13,27 @@
         <div style="min-height: 315px; margin-bottom: 0px;">
             @if (project.imageCount > 0)
             {
-                if (project.ImagePath.Substring(0, 5) == "https")
+                if (project.imageCount == 1)
                 {
-                    <p>
-                        <iframe style="float: left; margin-right: 50px;" id="demo" width="560" height="315" src="@project.ImagePath" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        @project.Description
-                    </p>
+                    if (project.ImagePath.Substring(0, 5) == "https")
+                    {
+                        <p>
+                            <iframe style="float: left; margin-right: 50px;" id="demo" width="560" height="315" src="@project.ImagePath" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            @project.Description
+                        </p>
+                    }
+                    else
+                    {
+                        <p>
+                            <img style="float: left" src="@project.ImagePath" alt="Sound Alert Audio Detected" height="40%" width="40%">
+                            @project.Description
+                        </p>
+                    }
                 }
-                else
-                {
-                    <p>
-                        <img style="float: left" src="@project.ImagePath" alt="Sound Alert Audio Detected" height="40%" width="40%">
-                        @project.Description
-                    </p>
-                }
+
                 if (project.SecondaryImagePath != null) //might need top go over how I will format this
                 {
-                        <img style="float: left" src="@project.SecondaryImagePath" alt="Sound Alert Audio Detected" height="40%" width="40%">
+                    <img style="float: left" src="@project.SecondaryImagePath" alt="Sound Alert Audio Detected" height="40%" width="40%">
                 }
             }
 
