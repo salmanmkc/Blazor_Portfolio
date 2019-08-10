@@ -23,6 +23,7 @@ namespace blazorWOO.Pages
             Para1 = para1;
             paraCount = 1;
             Title = title;
+            paras.Add(Para1);
         }
 
         public post(string title, string para1, string img1)
@@ -32,6 +33,9 @@ namespace blazorWOO.Pages
             paraCount = 1;
             imgCount = 1;
             Title = title;
+            paras.Add(Para1);
+
+
         }
 
         public post(string title, string para1, string img1, string para2, string img2)
@@ -43,6 +47,9 @@ namespace blazorWOO.Pages
             paraCount = 2;
             imgCount = 2;
             Title = title;
+            paras.Add(Para1);
+            paras.Add(Para2);
+
         }
 
         public post(string title, string para1, string img1, string para2, string img2, string para3, string im3)
@@ -56,6 +63,11 @@ namespace blazorWOO.Pages
             paraCount = 3;
             imgCount = 3;
             Title = title;
+            paras.Add(Para1);
+            paras.Add(Para2);
+            paras.Add(Para3);
+
+
         }
 
         public post(string title, string para1, string img1, string para2)
@@ -66,6 +78,10 @@ namespace blazorWOO.Pages
             paraCount = 2;
             imgCount = 1;
             Title = title;
+            paras.Add(Para1);
+            paras.Add(Para2);
+
+
         }
 
         public post(string title, string para1, string img1, string para2, string img2, string para3, string im3, string para4)
@@ -80,6 +96,10 @@ namespace blazorWOO.Pages
             paraCount = 4;
             imgCount = 3;
             Title = title;
+            paras.Add(Para1);
+            paras.Add(Para2);
+            paras.Add(Para3);
+            paras.Add(Para4);
         }
 
         public post(string title, string para1, string img1, string para2, string img2, string para3, string im3, string para4, string para5)
@@ -95,6 +115,11 @@ namespace blazorWOO.Pages
             paraCount = 5;
             imgCount = 3;
             Title = title;
+            paras.Add(Para1);
+            paras.Add(Para2);
+            paras.Add(Para3);
+            paras.Add(Para4);
+            paras.Add(Para5);
         }
 
         public post(string title, string para1, string img1, string para2, string img2, string para3, string im3, string para4, string para5, string para6)
@@ -111,6 +136,12 @@ namespace blazorWOO.Pages
             paraCount = 6;
             imgCount = 3;
             Title = title;
+            paras.Add(Para1);
+            paras.Add(Para2);
+            paras.Add(Para3);
+            paras.Add(Para4);
+            paras.Add(Para5);
+            paras.Add(Para6);
         }
 
         public post(string title, string para1, string img1, string para2, string img2, string para3, string im3, string para4, string para5, string para6, string para7)
@@ -128,6 +159,13 @@ namespace blazorWOO.Pages
             paraCount = 7;
             imgCount = 3;
             Title = title;
+            paras.Add(Para1);
+            paras.Add(Para2);
+            paras.Add(Para3);
+            paras.Add(Para4);
+            paras.Add(Para5);
+            paras.Add(Para6);
+            paras.Add(Para7);
         }
 
         private string para1;
