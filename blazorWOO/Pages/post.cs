@@ -13,6 +13,14 @@ namespace blazorWOO.Pages
             Img1 = img1;
         }
 
+        public post(string para1, string img1, string para2, string img2)
+        {
+            Para1 = para1;
+            Img1 = img1;
+            Para2 = para2;
+            Img2 = img2;
+        }
+
         private string para1;
 
         public string Para1
