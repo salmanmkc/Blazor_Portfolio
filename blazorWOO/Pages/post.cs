@@ -12,6 +12,7 @@ namespace blazorWOO.Pages
         public post(string para1)
         {
             Para1 = para1;
+            paraCount = 1;
         }
         public post(string para1, string img1)
         {
