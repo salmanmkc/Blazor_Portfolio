@@ -7,6 +7,14 @@ namespace blazorWOO.Pages
 {
     public class post
     {
+        private string title;
+
+        public string Title
+        {
+            get { return title; }
+            set { title = value; }
+        }
+
         public int paraCount { get; set; }
         public int imgCount { get; set; }
         public post(string para1)
