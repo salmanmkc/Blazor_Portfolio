@@ -253,7 +253,17 @@ namespace blazorWOO.Pages
         public string Para7
         {
             get { return para7; }
-            set { para7 = value; }
+            set
+            {
+                if (value != "")
+                {
+                    para7 = value;
+                }
+                else
+                {
+                    throw new Exception("paragraph 7 cannot be empty");
+                }
+            }
         }
 
 
