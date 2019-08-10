@@ -7,9 +7,10 @@ namespace blazorWOO.Pages
 {
     public class post
     {
-        public post()
+        public post(string para1, string img1)
         {
-
+            Para1 = para1;
+            Img1 = img1;
         }
 
         private string para1;
