@@ -235,7 +235,17 @@ namespace blazorWOO.Pages
         public string Para6
         {
             get { return para6; }
-            set { para6 = value; }
+            set
+            {
+                if (value != "")
+                {
+                    para6 = value;
+                }
+                else
+                {
+                    throw new Exception("paragraph 6 cannot be empty");
+                }
+            }
         }
 
         private string para7;
