@@ -9,6 +9,7 @@ namespace blazorWOO.Pages
     {
         private string title;
         public List<string> paras = new List<string>();
+        public List<string> imgs = new List<string>();
 
         public string Title
         {
