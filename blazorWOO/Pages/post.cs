@@ -92,7 +92,7 @@ namespace blazorWOO.Pages
 
         }
 
-        public post(string title, string para1, string img1, string para2, string img2, string para3, string im3, string para4)
+        public post(string title, string para1, string img1, string para2, string img2, string para3, string img3, string para4)
         {
             Para1 = para1;
             Img1 = img1;
@@ -113,7 +113,7 @@ namespace blazorWOO.Pages
             imgs.Add(Img3);
         }
 
-        public post(string title, string para1, string img1, string para2, string img2, string para3, string im3, string para4, string para5)
+        public post(string title, string para1, string img1, string para2, string img2, string para3, string img3, string para4, string para5)
         {
             Para1 = para1;
             Img1 = img1;
@@ -136,7 +136,7 @@ namespace blazorWOO.Pages
             imgs.Add(Img3);
         }
 
-        public post(string title, string para1, string img1, string para2, string img2, string para3, string im3, string para4, string para5, string para6)
+        public post(string title, string para1, string img1, string para2, string img2, string para3, string img3, string para4, string para5, string para6)
         {
             Para1 = para1;
             Img1 = img1;
@@ -161,7 +161,7 @@ namespace blazorWOO.Pages
             imgs.Add(Img3);
         }
 
-        public post(string title, string para1, string img1, string para2, string img2, string para3, string im3, string para4, string para5, string para6, string para7)
+        public post(string title, string para1, string img1, string para2, string img2, string para3, string img3, string para4, string para5, string para6, string para7)
         {
             Para1 = para1;
             Img1 = img1;
