@@ -7,6 +7,7 @@ namespace blazorWOO.Pages
 {
     public class Inputs
     {
+        public List<input> inputList = new List<input>();
         public Inputs()
         {
             input i1 = new input("text", "First Name");
