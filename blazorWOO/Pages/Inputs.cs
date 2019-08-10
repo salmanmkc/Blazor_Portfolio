@@ -18,8 +18,6 @@ namespace blazorWOO.Pages
             inputList.Add(i3);
             input i4 = new input("date", "Date of Birth");
             inputList.Add(i4);
-
-
         }
     }
 }
