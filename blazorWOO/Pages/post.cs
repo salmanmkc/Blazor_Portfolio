@@ -185,7 +185,7 @@ namespace blazorWOO.Pages
             {
                 if (value != "")
                 {
-                    img1 = value;
+                    img3 = value;
                 }
                 else
                 {
