@@ -8,6 +8,7 @@ namespace blazorWOO.Pages
     public class post
     {
         private string title;
+        public List<string> paras = new List<string>();
 
         public string Title
         {
