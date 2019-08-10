@@ -7,6 +7,9 @@ namespace blazorWOO.Pages
 {
     public class Posts
     {
+        public Posts()
+        {
 
+        }
     }
 }
