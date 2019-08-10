@@ -91,13 +91,30 @@ namespace blazorWOO.Pages
             set { para4 = value; }
         }
 
-        private int para5;
+        private string para5;
 
-        public int Para5
+        public string Para5
         {
             get { return para5; }
             set { para5 = value; }
         }
+
+        private string para6;
+
+        public string Para6
+        {
+            get { return para6; }
+            set { para6 = value; }
+        }
+
+        private string para7;
+
+        public string Para7
+        {
+            get { return para7; }
+            set { para7 = value; }
+        }
+
 
     }
 }
