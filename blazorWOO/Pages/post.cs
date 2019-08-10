@@ -207,7 +207,7 @@ namespace blazorWOO.Pages
                 }
                 else
                 {
-                    throw new Exception("paragraph 4 path cannot be empty");
+                    throw new Exception("paragraph 4 cannot be empty");
                 }
             }
         }
@@ -217,7 +217,17 @@ namespace blazorWOO.Pages
         public string Para5
         {
             get { return para5; }
-            set { para5 = value; }
+            set
+            {
+                if (value != "")
+                {
+                    para5 = value;
+                }
+                else
+                {
+                    throw new Exception("paragraph 5 cannot be empty");
+                }
+            }
         }
 
         private string para6;
