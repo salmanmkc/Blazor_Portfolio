@@ -37,28 +37,16 @@
                     {
                         <p>
                             <iframe style="float: left; margin-right: 50px;" id="demo" width="560" height="315" src="@project.ImagePath" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            @project.Description
-                        </p>
-                    }
-                    else
-                    {
-                        <p>
-                            <img style="float: left" src="@project.ImagePath" alt="Sound Alert Audio Detected" height="20%%" width="20%%">
-                            @project.Description
-                        </p>
-                    }
-                    if (project.ImagePath.Substring(0, 5) == "https")
-                    {
-                        <p>
-                            <iframe style="float: left; margin-right: 50px;" id="demo" width="20%" height="20%" src="@project.SecondaryImagePath" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                           
-                        </p>
-                    }
-                    else
-                    {
-                        <p>
                             <img style="float: left" src="@project.SecondaryImagePath" alt="Sound Alert Audio Detected" height="20%" width="20%">
-
+                            @project.Description
+                        </p>
+                    }
+                    else
+                    {
+                        <p style="word-wrap: break-word">
+                            <img style="float: left" src="@project.ImagePath" alt="Sound Alert Audio Detected" height="20%%" width="20%%">
+                            <img style="float: left" src="@project.SecondaryImagePath" alt="Sound Alert Audio Detected" height="20%" width="20%">
+                            @project.Description
                         </p>
                     }
                 }
