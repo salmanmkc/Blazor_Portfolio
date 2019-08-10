@@ -11,10 +11,10 @@
         <p><i>By Salman Chishti</i></p>
         <div style="min-height: 315px; margin-bottom: 0px;">
         @for(int i = 0; i < post.paras.Count; i++){
-            <p>@post.paras[i]</p>
-        }
-        @for(int i = 0; i < post.imgs.Count; i++){
-            <img src="@post.imgs[i]" alt="me at the River Thames" height="50%" width="50%">
+                <p>@post.paras[i]</p>
+            if(i < 4){
+                <img src="@post.imgs[i]" alt="me at the River Thames" height="50%" width="50%">
+            }
         }
         </div>
     </div>
