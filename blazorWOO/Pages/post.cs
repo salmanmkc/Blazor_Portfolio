@@ -189,7 +189,7 @@ namespace blazorWOO.Pages
                 }
                 else
                 {
-                    throw new Exception("img1 path cannot be empty");
+                    throw new Exception("img3 path cannot be empty");
                 }
             }
         }
@@ -199,7 +199,17 @@ namespace blazorWOO.Pages
         public string Para4
         {
             get { return para4; }
-            set { para4 = value; }
+            set
+            {
+                if (value != "")
+                {
+                    para4 = value;
+                }
+                else
+                {
+                    throw new Exception("paragraph 4 path cannot be empty");
+                }
+            }
         }
 
         private string para5;
