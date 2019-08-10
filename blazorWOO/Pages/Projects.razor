@@ -3,7 +3,12 @@
 <h1>Projects</h1>
 
 <p>On this page I will show you some of the projects that I have done. I do like shipping final products, however I also love experimenting with new technologies, for example this whole website is made using Blazor, doig thigs with the Graph API may not give a full product, since a lot of the new things that I try are in the testing phase so there are many bugs which limit the amount I am able to achieve, especially since I am trying from an non-employee perspective with limited resources</p>
-
+<div style="float: left; max-width: 30%">
+    <input type="text" />
+    <input type="email" />
+    <input type="date" />
+    <i>Entered details correctly?</i><input type="checkbox" />
+</div>
 
 @foreach (var project in projects.projects)
 {
@@ -25,12 +30,7 @@
         </div>
     </div>
 }
-<div style="float: left; max-width: 30%">
-    <input type="text" />
-    <input type="email" />
-    <input type="date" />
-    <i>Entered details correctly?</i><input type="checkbox" />
-</div>
+
 
 
 @code {
