@@ -5,11 +5,11 @@
 <p>@projects.introductionText</p>
 
 <div style="max-width: 70%; float: left; margin-right: 20px;">
-@foreach (var project in projects.projects)
+@foreach (var post in posts)
 {
     <div>
-        <h1 style="margin-top: 30px; margin-bottom: 0px;">@project.Title</h1>
-        <p><i>@project.Subtitle</i></p>
+        <h1 style="margin-top: 30px; margin-bottom: 0px;">@post.Title</h1>
+        <p><i>By Salman Chishti</i></p>
         <div style="min-height: 315px; margin-bottom: 0px;">
             @if (project.imageCount > 0)
             {
