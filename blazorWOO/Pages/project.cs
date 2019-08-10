@@ -79,10 +79,10 @@ namespace blazorWOO.Pages
 
         private string secondaryImagePath;
 
-        public string ScondaryImagePath
+        public string SecondaryImagePath
         {
-            get { return imagePath; }
-            set { imagePath = value; }
+            get { return secondaryImagePath; }
+            set { secondaryImagePath = value; }
         }
 
     }
