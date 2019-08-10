@@ -27,8 +27,12 @@
                         @project.Description
                     </p>
                 }
-
+                if (project.SecondaryImagePath != null)
+                {
+                        <img style="float: left" src="@project.SecondaryImagePath" alt="Sound Alert Audio Detected" height="40%" width="40%">
+                }
             }
+
 
         </div>
     </div>
