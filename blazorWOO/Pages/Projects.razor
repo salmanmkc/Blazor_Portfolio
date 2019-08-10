@@ -28,19 +28,16 @@
 </div>
 <div style="float: left; max-width: 30%; margin-top: 30px;">
     <h1>Get in contact!</h1>
-    <input type="text" placeholder="First Name" />
-    <br />
-    <input type="text" placeholder="Second Name" />
-    <br />
-    <input type="email" placeholder="Email Address" />
-    <br />
-    <input type="date" placeholder="Date of birth" />
-    <br />
-    <i>Entered details correctly?</i><input type="checkbox" />
+    @foreach (var input in inputsEnum.inputList)
+    {
+        <input type="@input.type" placeholder="@input.placeholder" />
+        <br />
+    }
 </div>
 
 
 @code {
-    ProjectsObj projects = new ProjectsObj();
+ProjectsObj projects = new ProjectsObj();
+Inputs inputsEnum = new Inputs();
 }
 
