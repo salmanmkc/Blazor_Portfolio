@@ -7,6 +7,7 @@ namespace blazorWOO.Pages
 {
     public class project
     {
+        public static int imageCount = 0;
         public project(string usertitle, string usersubtitle, string userdescription, string userImagePath, string userSecondImagePath)
         {
             Title = usertitle;
