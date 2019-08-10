@@ -7,6 +7,8 @@ namespace blazorWOO.Pages
 {
     public class post
     {
+        public int paraCount { get; set; }
+
         public post(string para1)
         {
             Para1 = para1;
