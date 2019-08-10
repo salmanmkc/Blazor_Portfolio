@@ -19,6 +19,7 @@ namespace blazorWOO.Pages
             Para1 = para1;
             Img1 = img1;
             paraCount = 1;
+            imgCount = 1;
         }
 
         public post(string para1, string img1, string para2, string img2)
@@ -27,6 +28,8 @@ namespace blazorWOO.Pages
             Img1 = img1;
             Para2 = para2;
             Img2 = img2;
+            paraCount = 2;
+            imgCount = 2;
         }
 
         public post(string para1, string img1, string para2, string img2, string para3, string im3)
@@ -37,6 +40,9 @@ namespace blazorWOO.Pages
             Img2 = img2;
             Para3 = para3;
             Img3 = img3;
+            paraCount = 3;
+            imgCount = 3;
+
         }
 
         public post(string para1, string img1, string para2)
@@ -44,6 +50,8 @@ namespace blazorWOO.Pages
             Para1 = para1;
             Img1 = img1;
             Para2 = para2;
+            paraCount = 2;
+            imgCount = 1;
         }
 
         public post(string para1, string img1, string para2, string img2, string para3, string im3, string para4)
@@ -55,6 +63,8 @@ namespace blazorWOO.Pages
             Para3 = para3;
             Img3 = img3;
             Para4 = para4;
+            paraCount = 4;
+            imgCount = 3;
         }
 
         public post(string para1, string img1, string para2, string img2, string para3, string im3, string para4, string para5)
@@ -67,6 +77,8 @@ namespace blazorWOO.Pages
             Img3 = img3;
             Para4 = para4;
             Para5 = para5;
+            paraCount = 5;
+            imgCount = 3;
         }
 
         public post(string para1, string img1, string para2, string img2, string para3, string im3, string para4, string para5, string para6)
@@ -80,6 +92,8 @@ namespace blazorWOO.Pages
             Para4 = para4;
             Para5 = para5;
             Para6 = para6;
+            paraCount = 6;
+            imgCount = 3;
         }
 
         public post(string para1, string img1, string para2, string img2, string para3, string im3, string para4, string para5, string para6, string para7)
@@ -94,6 +108,8 @@ namespace blazorWOO.Pages
             Para5 = para5;
             Para6 = para6;
             Para7 = para7;
+            paraCount = 7;
+            imgCount = 3;
         }
 
         private string para1;
