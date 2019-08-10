@@ -20,7 +20,6 @@ namespace blazorWOO.Pages
             Img1 = img1;
             paraCount = 1;
         }
-    }
 
         public post(string para1, string img1, string para2, string img2)
         {
