@@ -15,4 +15,8 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.0.0-preview7-19378-04" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\css\Assets\ProjectImages\SoundWarning\" />
+  </ItemGroup>
+
 </Project>
