@@ -152,6 +152,10 @@ namespace blazorWOO.Pages
                 {
                     img1 = value;
                 }
+                else
+                {
+                    throw new Exception("img1 path cannot be empty");
+                }
             }
         }
 
