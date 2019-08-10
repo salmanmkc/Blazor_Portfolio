@@ -93,7 +93,13 @@ namespace blazorWOO.Pages
         public string Para1
         {
             get { return para1; }
-            set { para1 = value; }
+            set
+            {
+                if (value != "")
+                {
+                    para1 = value;
+                }
+            }
         }
 
         private string para2;
