@@ -4,20 +4,21 @@
 
 
 <div style="max-width: 70%; float: left; margin-right: 20px;">
-@foreach (var post in posts.posts)
+    @foreach (var post in posts.posts)
 {
     <div>
         <h1 style="margin-top: 30px; margin-bottom: 0px;">@post.Title</h1>
         <p><i>By Salman Chishti</i></p>
         <div style="min-height: 315px; margin-bottom: 0px;">
-        @for(int i = 0; i < post.paras.Count; i++){
-                <p>@post.paras[i]</p>
+            @for(int i = 0; i < post.paras.Count; i++){
+            <p>@post.paras[i]</p>
             if(i < 3){
-                <img src="@post.imgs[i]" alt="me at the River Thames" height="50%" width="50%">
+            <img src="@post.imgs[i]" alt="me at the River Thames" height="50%" width="50%">
             }
         }
         </div>
     </div>
+    <hr width="75%">
 }
 </div>
 <div style="float: left; max-width: 30%; margin-top: 30px;">
