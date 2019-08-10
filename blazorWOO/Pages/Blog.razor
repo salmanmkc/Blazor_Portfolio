@@ -10,7 +10,9 @@
         <h1 style="margin-top: 30px; margin-bottom: 0px;">@post.Title</h1>
         <p><i>By Salman Chishti</i></p>
         <div style="min-height: 315px; margin-bottom: 0px;">
-
+        @for(int i = 0; i < post.paras.Count; i++){
+            <p>@post.paras[i]</p>
+        }
 
 
         </div>
