@@ -134,7 +134,13 @@ namespace blazorWOO.Pages
         public string Img1
         {
             get { return img1; }
-            set { img1 = value; }
+            set
+            {
+                if (value != "")
+                {
+                    img1 = value;
+                }
+            }
         }
 
         private string img2;
