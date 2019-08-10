@@ -83,5 +83,13 @@ namespace blazorWOO.Pages
             set { img3 = value; }
         }
 
+        private string para4;
+
+        public string Para4
+        {
+            get { return para4; }
+            set { para4 = value; }
+        }
+
     }
 }
