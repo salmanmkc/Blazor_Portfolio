@@ -7,6 +7,13 @@ namespace blazorWOO.Pages
 {
     public class project
     {
+        public project(string usertitle, string usersubtitle, string userdescription, string userImagePath, string userSecondImagePath)
+        {
+            Title = usertitle;
+            Subtitle = usersubtitle;
+            Description = userdescription;
+            ImagePath = userImagePath;
+        }
 
         public project(string usertitle, string usersubtitle, string userdescription, string userImagePath)
         {
