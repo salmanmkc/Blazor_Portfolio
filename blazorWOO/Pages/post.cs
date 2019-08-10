@@ -17,11 +17,13 @@ namespace blazorWOO.Pages
 
         public int paraCount { get; set; }
         public int imgCount { get; set; }
-        public post(string para1)
+        public post(string title, string para1)
         {
             Para1 = para1;
             paraCount = 1;
+            Title = title;
         }
+
         public post(string para1, string img1)
         {
             Para1 = para1;
