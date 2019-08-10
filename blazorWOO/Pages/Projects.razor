@@ -7,30 +7,31 @@
 
 @foreach (var project in projects.projects)
 {
-<div style="max-width: 70%; float: left">
-    <h1 style="margin-top: 30px; margin-bottom: 0px;">@project.Title</h1>
-    <p><i>@project.Subtitle</i></p>
-    <div style="min-height: 315px; margin-bottom: 0px;">
-        @if (project.ImagePath != null)
-        {
-            <p>
+    <div style="max-width: 70%; float: left">
+        <h1 style="margin-top: 30px; margin-bottom: 0px;">@project.Title</h1>
+        <p><i>@project.Subtitle</i></p>
+        <div style="min-height: 315px; margin-bottom: 0px;">
+            @if (project.ImagePath != null)
+            {
+                <p>
 
-                <iframe style="float: left; margin-right: 50px;" id="demo" width="560" height="315" src="@project.ImagePath" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe style="float: left; margin-right: 50px;" id="demo" width="560" height="315" src="@project.ImagePath" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-                @project.Description
-            </p>
+                    @project.Description
+                </p>
 
-        }
+            }
+        </div>
     </div>
-</div>
+}
 <div style="float: left">
     <input type="text" />
     <input type="email" />
-    <input type="date"/>
+    <input type="date" />
     <i>Entered details correctly?</i><input type="checkbox" />
 </div>
-}
+
 
 @code {
     ProjectsObj projects = new ProjectsObj();
