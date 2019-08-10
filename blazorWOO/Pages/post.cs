@@ -35,7 +35,7 @@ namespace blazorWOO.Pages
             imgCount = 1;
             Title = title;
             paras.Add(Para1);
-
+            imgs.Add(Img1);
 
         }
 
@@ -50,6 +50,8 @@ namespace blazorWOO.Pages
             Title = title;
             paras.Add(Para1);
             paras.Add(Para2);
+            imgs.Add(Img1);
+            imgs.Add(Img2);
 
         }
 
@@ -67,6 +69,9 @@ namespace blazorWOO.Pages
             paras.Add(Para1);
             paras.Add(Para2);
             paras.Add(Para3);
+            imgs.Add(Img1);
+            imgs.Add(Img2);
+            imgs.Add(Img3);
 
 
         }
@@ -81,7 +86,9 @@ namespace blazorWOO.Pages
             Title = title;
             paras.Add(Para1);
             paras.Add(Para2);
-
+            imgs.Add(Img1);
+            imgs.Add(Img2);
+            imgs.Add(Img3);
 
         }
 
@@ -101,6 +108,9 @@ namespace blazorWOO.Pages
             paras.Add(Para2);
             paras.Add(Para3);
             paras.Add(Para4);
+            imgs.Add(Img1);
+            imgs.Add(Img2);
+            imgs.Add(Img3);
         }
 
         public post(string title, string para1, string img1, string para2, string img2, string para3, string im3, string para4, string para5)
@@ -121,6 +131,9 @@ namespace blazorWOO.Pages
             paras.Add(Para3);
             paras.Add(Para4);
             paras.Add(Para5);
+            imgs.Add(Img1);
+            imgs.Add(Img2);
+            imgs.Add(Img3);
         }
 
         public post(string title, string para1, string img1, string para2, string img2, string para3, string im3, string para4, string para5, string para6)
@@ -143,6 +156,9 @@ namespace blazorWOO.Pages
             paras.Add(Para4);
             paras.Add(Para5);
             paras.Add(Para6);
+            imgs.Add(Img1);
+            imgs.Add(Img2);
+            imgs.Add(Img3);
         }
 
         public post(string title, string para1, string img1, string para2, string img2, string para3, string im3, string para4, string para5, string para6, string para7)
@@ -167,6 +183,9 @@ namespace blazorWOO.Pages
             paras.Add(Para5);
             paras.Add(Para6);
             paras.Add(Para7);
+            imgs.Add(Img1);
+            imgs.Add(Img2);
+            imgs.Add(Img3);
         }
 
         private string para1;
