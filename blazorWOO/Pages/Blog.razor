@@ -2,10 +2,10 @@
 
 <h1>Blog</h1>
 
-<p>@projects.introductionText</p>
+<p>@ProjectsObj.introductionText</p>
 
 <div style="max-width: 70%; float: left; margin-right: 20px;">
-@foreach (var project in Projects.projects)
+@foreach (var project in ProjectsObj.projects)
 {
     <div>
         <h1 style="margin-top: 30px; margin-bottom: 0px;">@project.Title</h1>
