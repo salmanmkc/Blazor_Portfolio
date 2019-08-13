@@ -13,7 +13,7 @@
                 {
                     if (projects.projects[i].imageCount == 1)
                     {
-                        if (project.ImagePath.Substring(0, 5) == "https")
+                        if (projects.projects[i].ImagePath.Substring(0, 5) == "https")
                         {
                             <p>
                                 <iframe style="float: left; margin-right: 50px;" id="demo" width="560" height="315" src="@project.ImagePath" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
