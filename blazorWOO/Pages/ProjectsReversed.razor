@@ -6,7 +6,7 @@
     <input type="button" value="Reverse List" onclick="window.location.href='http://www.hyperlinkcode.com/button-links.php'" />
 </form>
 <div style="margin-top: 20px; max-width: 70%; float: left; margin-right: 20px;">
-    @for(int i = 0; i< projects.projects.Count; i++)
+    @for(int i = projects.projects.Count; i>-1; Count; i--)
     {
         <div style="margin-bottom: 40px">
             <h2 style="margin-bottom: 0px;">@projects.projects[i].Title</h2>
