@@ -3,7 +3,7 @@
 <h1>Projects</h1>
 <i>Check out my <a href="http://www.github.com/salmanmkc">GitHub</a></i>
 <div style="margin-top: 20px; max-width: 70%; float: left; margin-right: 20px;">
-    @foreach (var project in projects.projects)
+    @for(int i = 0; i< projects.projects.Count; i++)
     {
         <div style="margin-bottom: 40px">
             <h2 style="margin-bottom: 0px;">@project.Title</h2>
