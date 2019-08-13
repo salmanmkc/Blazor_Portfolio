@@ -6,7 +6,7 @@
     @for(int i = 0; i< projects.projects.Count; i++)
     {
         <div style="margin-bottom: 40px">
-            <h2 style="margin-bottom: 0px;">@project.Title</h2>
+            <h2 style="margin-bottom: 0px;">@projects.projects[i].Title</h2>
             <p><i>@project.Subtitle</i></p>
             <div style="min-height: 315px; margin-bottom: 0px;">
                 @if (project.imageCount > 0)
