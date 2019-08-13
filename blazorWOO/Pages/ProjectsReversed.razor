@@ -1,0 +1,86 @@
+﻿@page "/Projects"
+
+<h1>Projects</h1>
+<i>Check out my <a href="http://www.github.com/salmanmkc">GitHub</a></i>
+<form>
+    <input type="button" value="Reverse List" onclick="window.location.href='http://www.hyperlinkcode.com/button-links.php'" />
+</form>
+<div style="margin-top: 20px; max-width: 70%; float: left; margin-right: 20px;">
+    @for(int i = 0; i< projects.projects.Count; i++)
+    {
+        <div style="margin-bottom: 40px">
+            <h2 style="margin-bottom: 0px;">@projects.projects[i].Title</h2>
+            <p><i>@projects.projects[i].Subtitle</i></p>
+            <div style="min-height: 315px; margin-bottom: 0px;">
+                @if (projects.projects[i].imageCount > 0)
+                {
+                    if (projects.projects[i].imageCount == 1)
+                    {
+                        if (projects.projects[i].ImagePath.Substring(0, 5) == "https")
+                        {
+                            <p>
+                                <iframe style="float: left; margin-right: 50px;" id="demo" width="560" height="315" src="@projects.projects[i].ImagePath" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                @projects.projects[i].Description
+                            </p>
+                        }
+                        else
+                        {
+                            <p>
+                                <img style="float: left" src="@projects.projects[i].ImagePath" alt="Sound Alert Audio Detected" height="40%" width="40%">
+                                @projects.projects[i].Description
+                            </p>
+                        }
+                    }
+
+                    if (projects.projects[i].imageCount == 2) //might need top go over how I will format this
+                    {
+                        if (projects.projects[i].ImagePath.Substring(0, 5) == "https")
+                        {
+                            <p>
+                                <iframe style="float: left; margin-right: 50px;" id="demo" width="560" height="315" src="@projects.projects[i].ImagePath" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <img style="float: left; margin-right: 20px" src="@projects.projects[i].SecondaryImagePath" alt="Sound Alert Audio Detected" height="20%" width="20%">
+                                @projects.projects[i].Description
+                            </p>
+                        }
+                        else
+                        {
+                            <p style="word-wrap: break-word">
+                                <img style="float: left" src="@projects.projects[i].ImagePath" alt="Sound Alert Audio Detected" height="20%%" width="20%%">
+                                <img style="float: left; margin-right: 20px" src="@projects.projects[i].SecondaryImagePath" alt="Sound Alert Audio Detected" height="30%" width="30%">
+                                @projects.projects[i].Description
+                            </p>
+                        }
+                    }
+                }
+
+
+            </div>
+        </div>
+        <hr style="margin-top: 20px" width="95%">
+            <hr size="7" noshade>
+            <hr width="95%">
+    }
+</div>
+<div style="float: left; max-width: 30%; margin-top: 30px;">
+    <h1>Get in contact!</h1>
+    @foreach (var input in inputsEnum.inputList)
+    {
+        <input style="width: 100%" type="@input.type" placeholder="@input.placeholder"/>
+        <br />
+    }
+</div>
+
+@*//to do*@
+@*<button onclick="@saveInputs"></button>*@
+
+@code {
+    ProjectsObj projects = new ProjectsObj();
+    Inputs inputsEnum = new Inputs();
+
+//to do 
+//void saveInputs()
+    //{
+
+}
+
+
