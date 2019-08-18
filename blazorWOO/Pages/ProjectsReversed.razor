@@ -6,8 +6,12 @@
 <form>
     <input type="button" value="Unreverse list" onclick="window.location.href='/Projects'" />
 </form>
+<Dialog Title="Blazor">
+    Do you want to
+    <i>learn more</i> about Blazor?
+</Dialog>
 <div style="margin-top: 20px; max-width: 70%; float: left; margin-right: 20px;">
-    @for(int i = projects.projects.Count -1; i>-1; i--)
+    @for (int i = projects.projects.Count - 1; i > -1; i--)
     {
         <div style="margin-bottom: 40px">
             <h2 style="margin-bottom: 0px;">@projects.projects[i].Title</h2>
@@ -58,15 +62,15 @@
             </div>
         </div>
         <hr style="margin-top: 20px" width="95%">
-            <hr size="7" noshade>
-            <hr width="95%">
+        <hr size="7" noshade>
+        <hr width="95%">
     }
 </div>
 <div style="float: left; max-width: 30%; margin-top: 30px;">
     <h1>Get in contact!</h1>
     @foreach (var input in inputsEnum.inputList)
     {
-        <input style="width: 100%" type="@input.type" placeholder="@input.placeholder"/>
+        <input style="width: 100%" type="@input.type" placeholder="@input.placeholder" />
         <br />
     }
 </div>
@@ -78,7 +82,7 @@
     ProjectsObj projects = new ProjectsObj();
     Inputs inputsEnum = new Inputs();
 
-//to do 
+//to do
 //void saveInputs()
     //{
 
