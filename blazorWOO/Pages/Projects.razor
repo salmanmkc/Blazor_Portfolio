@@ -76,11 +76,19 @@
 @*<button onclick="@saveInputs"></button>*@
 
 @code {
-    ProjectsObj projects = new ProjectsObj();
-    Inputs inputsEnum = new Inputs();
 
-//to do 
-//void saveInputs()
+    protected override async Task OnInitializedAsync()
+    {
+        //using(string client as new HttpClient){
+        //    string uri = "endpoint://";
+        //}
+        ProjectsObj projects = new ProjectsObj();
+        Inputs inputsEnum = new Inputs();
+    }
+
+
+    //to do 
+    //void saveInputs()
     //{
 
 }
